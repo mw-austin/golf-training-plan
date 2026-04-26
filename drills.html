@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drill Library — Austin's Golf Training Plan</title>
+  <meta name="description" content="An 8-week training plan for an amateur golfer working from the 90s into the 80s. Built around early-extension and clubface fixes, with research-backed practice methodology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234d6147'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='600' fill='%23fdfcf7' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem("golfsite.theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var t = stored || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+<button class="menu-toggle" data-menu-toggle aria-label="Open menu">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+<div class="sidebar-backdrop" data-menu-close></div>
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="brand-mark">G</span>
+      <div>
+        <div class="brand-text">Austin's Golf Plan</div>
+        <div class="brand-sub">Tee-to-50, in 8 weeks</div>
+      </div>
+    </a>
+    <div class="nav-group">
+      <div class="nav-group-label">Start here</div>
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="index.html">Overview</a></li><li class="nav-item"><a class="nav-link" href="diagnosis.html">Diagnosis</a></li><li class="nav-item"><a class="nav-link" href="methodology.html">Methodology</a></li></ul>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">The plan</div>
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="plan.html">8-Week Plan</a></li><li class="nav-item"><a class="nav-link" href="schedule.html">Weekly Schedule</a></li></ul>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Practice</div>
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link active" href="drills.html">Drill Library</a></li><li class="nav-item"><a class="nav-link" href="mobility.html">Mobility &amp; Strength</a></li><li class="nav-item"><a class="nav-link" href="routine.html">Pre-Shot Routine</a></li></ul>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Measurement</div>
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="kpis.html">KPI Tracker</a></li><li class="nav-item"><a class="nav-link" href="tracking.html">Round Log</a></li></ul>
+    </div>
+    <div class="nav-group">
+      <div class="nav-group-label">Reference</div>
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="quickref.html">Quick Reference</a></li><li class="nav-item"><a class="nav-link" href="equipment.html">Equipment</a></li><li class="nav-item"><a class="nav-link" href="troubleshooting.html">Troubleshooting</a></li><li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li></ul>
+    </div>
+    <div class="sidebar-footer">
+      <span class="phase-pill" data-phase-pill><span class="dot"></span>Phase 1 &middot; Posture &amp; Setup</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+        <span data-theme-icon></span><span data-theme-label>Dark</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="main-inner">
+      <div class="eyebrow">15 drills, four phases</div>
+      <h1>Drill Library</h1>
+      <p class="lead">Check off drills as you complete them each session. The checklist persists in your browser so you can pick up where you left off.</p>
+
+      <div class="drill-header">
+        <span class="drill-summary" data-drills-summary>0 of 15 drills checked</span>
+        <button class="btn btn-ghost" data-drills-reset style="font-size:13px; padding:6px 12px;">Reset session</button>
+      </div>
+
+      <div class="drill-list">
+
+        <!-- ── PHASE 1 ── -->
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <label class="drill-checkbox-wrap" style="display:contents;">
+              <input class="drill-checkbox" type="checkbox" data-drill-id="wall-drill" />
+            </label>
+            <div class="drill-title-group">
+              <div class="drill-title">Wall Drill (Glute-to-Wall)</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 1</span>
+                <span class="drill-tag">Posture</span>
+                <span class="drill-tag">Early extension</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>The highest-leverage drill in the plan. Teaches your body what it means to maintain spine angle and pelvis depth through impact — directly counteracting early extension.</p>
+            <p><strong>How to do it:</strong> Stand a fist-width from a wall. Take your setup. As you swing through impact, your glutes should lightly brush or maintain proximity to the wall. If your pelvis thrusts forward (early extension), your glutes will move away. No ball required for slow rehearsals.</p>
+            <ul>
+              <li>Start at 40–50% speed. Feel is everything here; speed comes later.</li>
+              <li>20 rehearsal reps before hitting balls every session in Phase 1.</li>
+              <li>Use a mirror or phone video to confirm from the down-the-line view.</li>
+              <li>Once you can hit 7-irons correctly, move the wall drill to warm-up only.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">20 reps before every session</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">No ball / 7-iron</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Speed</div><div class="drill-meta-value">40–70%</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Video</div><div class="drill-meta-value"><a href="https://www.youtube.com/results?search_query=golf+wall+drill+early+extension" target="_blank" rel="noopener">Search YouTube ↗</a></div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="pump-drill" />
+            <div class="drill-title-group">
+              <div class="drill-title">Pump Drill</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 1</span>
+                <span class="drill-tag">Low point</span>
+                <span class="drill-tag">Spine angle</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Builds awareness of forward shaft lean and low-point control. Helps you feel a correct impact position before committing to a full swing.</p>
+            <p><strong>How to do it:</strong> Take a half-backswing, then pump the club down to impact position three times without hitting the ball. On the fourth pump, hit the ball. The three pumps let your nervous system rehearse the impact position at low speed.</p>
+            <ul>
+              <li>Focus on keeping your weight forward on the lead foot during the pumps.</li>
+              <li>The club should be leaning toward the target (hands ahead of ball) at each pump stop.</li>
+              <li>After 10 pump-then-hit reps, do 10 free swings with no pump, maintaining the feel.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">10 pump-then-hit reps</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">When</div><div class="drill-meta-value">After wall drill warm-up</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="feet-together" />
+            <div class="drill-title-group">
+              <div class="drill-title">Feet-Together Drill</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 1</span>
+                <span class="drill-tag">Balance</span>
+                <span class="drill-tag">Low point</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Placing your feet together forces you to swing in balance and eliminates the lateral sway that often enables early extension. Great diagnostic tool and corrective drill.</p>
+            <p><strong>How to do it:</strong> Feet touching or 2 inches apart. Hit 7-irons at 60–70% speed. Any lateral sway or early extension will cause you to lose balance immediately — instant feedback.</p>
+            <ul>
+              <li>If you can't make solid contact, slow down further before speeding up.</li>
+              <li>Focus on rotating around a stable center, not shifting toward the target.</li>
+              <li>10 feet-together shots, then 10 normal shots. Alternate sets.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">2–3 sets of 10</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron, 8-iron</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Speed</div><div class="drill-meta-value">60–70%</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="slow-motion" />
+            <div class="drill-title-group">
+              <div class="drill-title">Slow-Motion Rehearsal</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 1</span>
+                <span class="drill-tag">All phases</span>
+                <span class="drill-tag">Motor learning</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Slow-motion rehearsal is not a drill so much as a practice method that belongs in every phase. Research on motor learning shows that explicit movement rehearsal at sub-30% speed helps encode new patterns before full-speed practice.</p>
+            <p><strong>How to do it:</strong> Swing at roughly 10–20% speed, with or without a ball. Stop at impact and hold the position for 2 seconds. Then continue to the finish and hold. Check: are your glutes still near where they started? Is your head still?</p>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">10 reps to open every session</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">Any</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Speed</div><div class="drill-meta-value">10–25%</div></div>
+          </div>
+        </div>
+
+        <!-- ── PHASE 2 ── -->
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="motorcycle" />
+            <div class="drill-title-group">
+              <div class="drill-title">Motorcycle Drill</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 2</span>
+                <span class="drill-tag">Clubface</span>
+                <span class="drill-tag">Lead wrist</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>The direct fix for an open clubface at impact. Teaches lead-wrist flexion (bowing) through the transition, which is the motor pattern that squares the face.</p>
+            <p><strong>How to do it:</strong> At the top of your backswing, rotate your lead forearm as if you were revving a motorcycle throttle — toward you, not away. This bows the lead wrist and closes the face. Rehearse this motion without a ball 10 times before hitting. When hitting, feel this &ldquo;rev&rdquo; happen just as you start the downswing.</p>
+            <ul>
+              <li>The move should happen at the very top / early transition, not at impact.</li>
+              <li>HackMotion sensor users: target 0&deg; to &minus;5&deg; (bowed) lead wrist at impact.</li>
+              <li>Start with 7-iron at 70% speed. Slice/pull will reduce immediately if done correctly.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">10 rehearsals + 20 hit reps</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron → driver</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Video</div><div class="drill-meta-value"><a href="https://www.youtube.com/results?search_query=golf+motorcycle+drill+lead+wrist" target="_blank" rel="noopener">Search YouTube ↗</a></div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="split-grip" />
+            <div class="drill-title-group">
+              <div class="drill-title">Split-Grip Drill</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 2</span>
+                <span class="drill-tag">Clubface</span>
+                <span class="drill-tag">Lead wrist</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Separating the hands 4–6 inches on the grip dramatically exaggerates feedback from the lead wrist. With a square or bowed lead wrist, the ball goes straight. With a cupped wrist, the face opens and the ball slices &mdash; instantly obvious.</p>
+            <p><strong>How to do it:</strong> Grip the club normally with your lead hand. Slide your trail hand down the grip 4–6 inches, near the bottom. Hit 7-irons at 60–70% speed. The exaggerated feel makes face control obvious. After 15 split-grip shots, hit 15 normal-grip shots maintaining the feel.</p>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">15 split + 15 normal</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Speed</div><div class="drill-meta-value">60–70%</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="gate-drill" />
+            <div class="drill-title-group">
+              <div class="drill-title">Gate Drill</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 2</span>
+                <span class="drill-tag">Path</span>
+                <span class="drill-tag">In-to-out</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Sets up a physical gate with tees or alignment sticks to force an in-to-out swing path. Directly corrects the over-the-top move that contributes to the pull-slice pattern.</p>
+            <p><strong>How to do it:</strong> Place two tees in the ground, one inside the ball line (6 inches behind impact, angled inward) and one outside the ball line (6 inches in front, angled outward). The gate forces the club to approach from inside and exit to the right of the target. Hit 7-irons, then 5-irons, working to avoid hitting either tee.</p>
+            <ul>
+              <li>Start with a wider gate (easier) and narrow it as you improve.</li>
+              <li>Combine with the Motorcycle Drill: in-to-out path + closed face = a draw, not a slice.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">20 balls per session</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron → 5-iron</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Setup</div><div class="drill-meta-value">2 tees or alignment sticks</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="impact-bag" />
+            <div class="drill-title-group">
+              <div class="drill-title">Impact Bag / Towel Roll</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 2</span>
+                <span class="drill-tag">Clubface</span>
+                <span class="drill-tag">Impact position</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Hitting into an impact bag (or a rolled-up range towel placed on the ground) gives immediate physical feedback on impact position. You can feel whether the handle is leading, whether the face is square, and whether you&rsquo;re extending through impact.</p>
+            <p><strong>How to do it:</strong> Place an impact bag or firm towel roll just in front of where the ball would be. Swing through impact into the bag at 40–50% speed. At impact, check: are your hands ahead of the bag? Is the face square? Are you compressing, or scooping?</p>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">15 reps, any session</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Speed</div><div class="drill-meta-value">40–50% (no ball)</div></div>
+          </div>
+        </div>
+
+        <!-- ── PHASE 3 ── -->
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="differential" />
+            <div class="drill-title-group">
+              <div class="drill-title">Differential Practice Sets</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 3</span>
+                <span class="drill-tag">Variability</span>
+                <span class="drill-tag">Motor learning</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>One of Adam Young&rsquo;s four practice modes. Alternating between an exaggerated correction and the old fault teaches your nervous system to find the middle ground. More effective for retention than pure block practice.</p>
+            <p><strong>How to do it:</strong> Hit one ball with a heavily exaggerated bowed lead wrist (overcorrection). Hit the next ball with a slightly cupped wrist (the old pattern). Alternate for 20 balls. Your system learns to calibrate between the two extremes and finds the optimal midpoint.</p>
+            <ul>
+              <li>Don&rsquo;t try to &ldquo;find the middle&rdquo; intentionally &mdash; let the nervous system do it.</li>
+              <li>You can apply this to any variable: extreme in-to-out path vs. out-to-in, etc.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">20 alternating balls</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron → mix</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Framework</div><div class="drill-meta-value">Adam Young — The Practice Manual</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="random-9" />
+            <div class="drill-title-group">
+              <div class="drill-title">Random 9-Shot Game</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 3</span>
+                <span class="drill-tag">Transfer</span>
+                <span class="drill-tag">Decision-making</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>A structured variability game that forces decision-making between every shot and prevents the autopilot mode of blocked range practice. Maximizes contextual interference — one of the best-supported variables in motor learning research for long-term retention.</p>
+            <p><strong>How to do it:</strong> Choose 3 clubs (e.g., 8i, 6i, hybrid) and 3 targets. You have 9 shot combinations (3 clubs &times; 3 targets). Randomize the order — never hit the same club-target combination twice in a row. Use your full pre-shot routine on every ball. Score 1 point per shot that starts on the intended side of the target. Aim for 7+/9.</p>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">9 shots per round, 2–3 rounds</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">3 clubs, rotating</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Pre-shot routine</div><div class="drill-meta-value">Required on every ball</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="window-drill" />
+            <div class="drill-title-group">
+              <div class="drill-title">Window Drill (Swing Shape)</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 3</span>
+                <span class="drill-tag">Path</span>
+                <span class="drill-tag">Calibrational</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>A calibrational practice drill where you intentionally try to hit the ball through different imaginary &ldquo;windows&rdquo; &mdash; left window, center window, right window &mdash; by changing your swing shape. Builds awareness of how path and face interact to produce different shot shapes.</p>
+            <p><strong>How to do it:</strong> Imagine three vertical windows, each about 15 yards apart, at your target distance. Hit 3 balls through the left window (draw/hook shape), 3 balls through the center, and 3 balls through the right window (fade/push shape). This forces you to intentionally adjust face and path, building shot-shaping awareness.</p>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">9 balls (3 per window)</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">7-iron or 6-iron</div></div>
+          </div>
+        </div>
+
+        <!-- ── PHASE 4 ── -->
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="course-sim" />
+            <div class="drill-title-group">
+              <div class="drill-title">Course Simulation</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 4</span>
+                <span class="drill-tag">Transfer</span>
+                <span class="drill-tag">Pressure</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Play a virtual round on the range. Pick a specific hole from your home course for each shot. Play the entire hole: tee shot, then approach, then chip if needed. Full pre-shot routine required on every ball. Log whether each shot achieved its objective.</p>
+            <p><strong>How to do it:</strong> Before heading to the range, write down 9 holes you want to play. For each hole, select the appropriate club and target (aim for a specific section of the range, not just a general direction). Play each hole mentally, then execute. This forces commitment on every shot.</p>
+            <ul>
+              <li>Score: 1 point per shot that starts in the intended zone.</li>
+              <li>Log your &ldquo;round score&rdquo; over 8 weeks to track mental execution improvement.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">9 holes per session</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">All clubs</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Pre-shot routine</div><div class="drill-meta-value">Required, every ball</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="clock-pressure" />
+            <div class="drill-title-group">
+              <div class="drill-title">Clock Pressure Game</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 4</span>
+                <span class="drill-tag">Pressure</span>
+                <span class="drill-tag">Routine</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>Adds a time constraint to replicate the mild time pressure of real-golf decision-making. Rushing your pre-shot routine is one of the most common under-pressure failures.</p>
+            <p><strong>How to do it:</strong> Set a 40-second timer between shots. You must complete your entire pre-shot routine and execute your swing before the timer goes off. If you&rsquo;re rushed, you&rsquo;ll feel it. The goal is a smooth, complete routine within the window &mdash; not fast, just efficient.</p>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">Full session with timer</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">All clubs</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Timer</div><div class="drill-meta-value">40 seconds between shots</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="drop-ball" />
+            <div class="drill-title-group">
+              <div class="drill-title">Drop-Ball Round</div>
+              <div class="drill-tags">
+                <span class="drill-tag phase-tag">Phase 4</span>
+                <span class="drill-tag">On course</span>
+                <span class="drill-tag">Transfer</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>The single most effective transfer drill. Play 9 holes solo, dropping a second ball on every tee shot and every approach inside 175 yards. Play both balls, with your full pre-shot routine on each. Log the results for each ball.</p>
+            <ul>
+              <li><strong>Why it works:</strong> You get double the transfer reps on your highest-leverage shots, in a real course environment, under real lie and wind conditions &mdash; none of which the range provides.</li>
+              <li>Log: fairways hit (Ball 1 vs. Ball 2), GIR, miss direction, pre-shot routine execution rating (1–5).</li>
+              <li>Ignore score on the round. This is a measurement session, not a competition.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">9 holes, 2 balls on key shots</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Location</div><div class="drill-meta-value">Golf course (solo round)</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Log</div><div class="drill-meta-value">Fairways, GIR, misses</div></div>
+          </div>
+        </div>
+
+        <div class="drill-card">
+          <div class="drill-card-header">
+            <input class="drill-checkbox" type="checkbox" data-drill-id="36-putting" />
+            <div class="drill-title-group">
+              <div class="drill-title">3-6-9 Putting Game</div>
+              <div class="drill-tags">
+                <span class="drill-tag">Short game</span>
+                <span class="drill-tag">All phases</span>
+                <span class="drill-tag">Putting</span>
+              </div>
+            </div>
+          </div>
+          <div class="drill-body">
+            <p>A pressure putting game for the bonus/short-game day. Make 3 putts in a row from 3 feet, then from 6 feet, then from 9 feet. If you miss at any stage, restart at 3 feet. Use your full pre-shot routine on each putt.</p>
+            <ul>
+              <li>The restart rule creates pressure equivalent to a competitive round &mdash; without any head-to-head competition.</li>
+              <li>Track your &ldquo;completion rate&rdquo; over 8 weeks (how many sessions do you finish all three stages).</li>
+              <li>Aim to complete all three stages within 20 minutes.</li>
+            </ul>
+          </div>
+          <div class="drill-meta">
+            <div class="drill-meta-item"><div class="drill-meta-label">Dosage</div><div class="drill-meta-value">Until 3-6-9 complete (20 min max)</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Club</div><div class="drill-meta-value">Putter</div></div>
+            <div class="drill-meta-item"><div class="drill-meta-label">Pre-shot routine</div><div class="drill-meta-value">Required</div></div>
+          </div>
+        </div>
+
+      </div><!-- end .drill-list -->
+
+      <footer class="page-footer">
+        <a class="nav-prev" href="schedule.html"><span class="nav-label">&larr; Previous</span><span class="nav-title">Weekly Schedule</span></a>
+        <a class="nav-next" href="mobility.html"><span class="nav-label">Next &rarr;</span><span class="nav-title">Mobility &amp; Strength</span></a>
+         </footer>
+    </div>
+  </main>
+</div>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/widgets.js"></script>
+</body>
+</html>
