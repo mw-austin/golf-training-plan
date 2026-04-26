@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Round Log — Austin's Golf Training Plan</title>
+<meta name="description" content="An 8-week training plan for an amateur golfer working from the 90s into the 80s. Built around early-extension and clubface fixes, with research-backed practice methodology." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234d6147'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='600' fill='%23fdfcf7' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+<script>
+  // Set theme before paint to avoid flash
+  (function () {
+    var stored = localStorage.getItem("golfsite.theme");
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var t = stored || (prefersDark ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+</head>
+<body>
+<button class="menu-toggle" data-menu-toggle aria-label="Open menu">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+<div class="sidebar-backdrop" data-menu-close></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="brand-mark">G</span>
+      <div>
+        <div class="brand-text">Austin's Golf Plan</div>
+        <div class="brand-sub">Tee-to-50, in 8 weeks</div>
+      </div>
+    </a>
+    
+      <div class="nav-group">
+        <div class="nav-group-label">Start here</div>
+        <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="index.html">Overview</a></li><li class="nav-item"><a class="nav-link" href="diagnosis.html">Diagnosis</a></li><li class="nav-item"><a class="nav-link" href="methodology.html">Methodology</a></li></ul>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The plan</div>
+        <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="plan.html">8-Week Plan</a></li><li class="nav-item"><a class="nav-link" href="schedule.html">Weekly Schedule</a></li></ul>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Practice</div>
+        <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="drills.html">Drill Library</a></li><li class="nav-item"><a class="nav-link" href="mobility.html">Mobility & Strength</a></li><li class="nav-item"><a class="nav-link" href="routine.html">Pre-Shot Routine</a></li></ul>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Measurement</div>
+        <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="kpis.html">KPI Tracker</a></li><li class="nav-item"><a class="nav-link active" href="tracking.html">Round Log</a></li></ul>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Reference</div>
+        <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="quickref.html">Quick Reference</a></li><li class="nav-item"><a class="nav-link" href="equipment.html">Equipment</a></li><li class="nav-item"><a class="nav-link" href="troubleshooting.html">Troubleshooting</a></li><li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li></ul>
+      </div>
+    <div class="sidebar-footer">
+      <span class="phase-pill" data-phase-pill><span class="dot"></span>Phase 1 · Posture & Setup</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+        <span data-theme-icon></span><span data-theme-label>Dark</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="main-inner">
+      <div class="eyebrow">Per-session and per-round logging</div>
+      <h1>Tracking: what to log each week</h1>
+      <p class="lead">If you don&rsquo;t measure it, you can&rsquo;t tell if the plan is working. Two log shapes &mdash; one for sessions, one for rounds.</p>
+      
+    <h2>Per-session log (after every Day 1 / Day 2 session)</h2>
+    <p>5 lines, 1 minute. Use the <a href="kpis.html">KPI tracker</a> for the launch monitor numbers; capture the rest in your notes app.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Field</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Date / phase / day type</td><td>May 4 / Phase 2 / Day 2 (monitor)</td></tr>
+        <tr><td>Top KPI target</td><td>Face-to-path &lt; +3°</td></tr>
+        <tr><td>Actual KPI average (10-shot)</td><td>+4.2°, getting closer</td></tr>
+        <tr><td>Drill that helped most today</td><td>Lead-wrist flexion + split-grip combo</td></tr>
+        <tr><td>One sentence: how it felt</td><td>Started loose, started flushing 7i around minute 30 once I let the wrist bow</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>Per-round log (after every round, including 9-hole evening rounds)</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Field</th><th>Track</th></tr></thead>
+      <tbody>
+        <tr><td>Score / course / tees</td><td>Self-explanatory</td></tr>
+        <tr><td>Fairways hit</td><td>Out of fairways available</td></tr>
+        <tr><td>GIR</td><td>Out of 9 or 18</td></tr>
+        <tr><td>Penalty tee shots</td><td>Woods, OB, water — count the shots that cost you 1+ stroke</td></tr>
+        <tr><td>Duffed/thinned long shots</td><td>Specifically the miss type we are training to fix</td></tr>
+        <tr><td>Scrambling %</td><td>Up-and-downs / chances. Should stay strong — that&rsquo;s your strength.</td></tr>
+        <tr><td>Pre-shot routine adherence</td><td>Out of full-swing shots, how many got the full routine? (Goal: 100% by Phase 4.)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>What &lsquo;success&rsquo; looks like at week 8</h2>
+    <div class="callout">
+      <ul style="margin:0;">
+        <li>Penalty tee shots: 1 or fewer per round (from your current 1–2 per round).</li>
+        <li>Duffed/thinned long shots: 1 or fewer per round.</li>
+        <li>Fairways hit: +2 per round vs. baseline.</li>
+        <li>Average score: 86–90 (a solid mid-80s pattern, with the occasional 84 or 91).</li>
+        <li>Comfort over the ball: subjective 1–10 scale, target 7+ (from current 4–5).</li>
+        <li>Launch monitor 7-iron face-to-path average: ±2°.</li>
+      </ul>
+    </div>
+  
+      
+    <footer class="page-footer">
+      <a class="nav-prev" href="kpis.html"><span class="nav-label">← Previous</span><span class="nav-title">KPI Tracker</span></a>
+      <a class="nav-next" href="quickref.html"><span class="nav-label">Next →</span><span class="nav-title">Quick Reference</span></a>
+    </footer>
+    </div>
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
